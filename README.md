@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ## Model Training
 To train the Translatomer model, use the following command:
 ```
-python HCSeer2_train_predict.py [options]
+python c.py [options]
 
 [options]:
 - --run_type  run type. Default = 'train'.
@@ -37,6 +37,6 @@ python HCSeer2_train_predict.py [options]
 ```
 Example to run the codes:
 ```
-nohup python train_all_11fold.py --run_type predict --sequence_data "E:\冷热点预 测课题_E盘分部\预测原始数据\predict_data_chrY_seq.txt" --input_feature_data "E:\冷热点预测课题_E盘分部\预测原始数据\predict_data_chrY_feature.txt" --checkpoint "E:\Python项目文件夹\Translatomer\lightning_logs\version_178\checkpoints\epoch=31-step=62176.ckpt" --predict_result_path "E:\冷热点预测课题_E盘分部\predict_result\predict_result_chrY.txt" 
+nohup python HCSeer2_train_predict.py --run_type predict --sequence_data "E:\冷热点预 测课题_E盘分部\预测原始数据\predict_data_chrY_seq.txt" --input_feature_data "E:\冷热点预测课题_E盘分部\预测原始数据\predict_data_chrY_feature.txt" --checkpoint "E:\Python项目文件夹\Translatomer\lightning_logs\version_178\checkpoints\epoch=31-step=62176.ckpt" --predict_result_path "E:\冷热点预测课题_E盘分部\predict_result\predict_result_chrY.txt" 
 ```
 
