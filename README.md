@@ -1,7 +1,7 @@
 # HCSeer2
 A Deep Learning-Based Multi-Scale Modeling Framework for Predicting Cold and Hot Spots of Variants in the Human Exome
 <div align="center">
-  <img src="figure/HCSeer架构图v2.png" alt="HCSeer Graph" width=1000px>
+  <img src="figure/fig1.jpg" alt="HCSeer Graph" width=1000px>
 </div>
 
 
@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ## Model Training
 To train the Translatomer model, use the following command:
 ```
-python c.py [options]
+python HCSeer2_train_predict.py [options]
 
 [options]:
 - --run_type  run type. Default = 'train'.
@@ -37,6 +37,6 @@ python c.py [options]
 ```
 Example to run the codes:
 ```
-nohup python HCSeer2_train_predict.py --run_type predict --sequence_data "E:\冷热点预 测课题_E盘分部\预测原始数据\predict_data_chrY_seq.txt" --input_feature_data "E:\冷热点预测课题_E盘分部\预测原始数据\predict_data_chrY_feature.txt" --checkpoint "E:\Python项目文件夹\Translatomer\lightning_logs\version_178\checkpoints\epoch=31-step=62176.ckpt" --predict_result_path "E:\冷热点预测课题_E盘分部\predict_result\predict_result_chrY.txt" 
+nohup python HCSeer2_train_predict.py --run_type predict --sequence_data "\path\predict_data_chrY_seq.txt" --input_feature_data "\path\predict_data_chrY_feature.txt" --checkpoint "\path\Translatomer\lightning_logs\version_178\checkpoints\epoch=31-step=62176.ckpt" --predict_result_path "\path\predict_result\predict_result_chrY.txt" 
 ```
 
