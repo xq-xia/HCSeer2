@@ -37,6 +37,6 @@ python HCSeer2_train_predict.py [options]
 ```
 Example to run the codes:
 ```
-nohup python HCSeer2_train_predict.py --run_type predict --sequence_data "\path\predict_data_chrY_seq.txt" --input_feature_data "\path\predict_data_chrY_feature.txt" --checkpoint "\path\Translatomer\lightning_logs\version_178\checkpoints\epoch=31-step=62176.ckpt" --predict_result_path "\path\predict_result\predict_result_chrY.txt" 
+python HCSeer2_train_predict.py --run_type predict --sequence_data "\path\predict_data_chrY_seq.txt" --input_feature_data "\path\predict_data_chrY_feature.txt" --checkpoint "\path\Translatomer\lightning_logs\version_178\checkpoints\epoch=31-step=62176.ckpt" --predict_result_path "\path\predict_result\predict_result_chrY.txt" 
 ```
 
