@@ -22,6 +22,10 @@ pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --e
 ```python
 pip install -r requirements.txt 
 ```
+or
+```python
+conda env create -f HCSeer2.yaml
+```
 
 ## Model Training
 To train the Translatomer model, use the following command:
@@ -37,6 +41,10 @@ python HCSeer2_train_predict.py [options]
 ```
 Example to run the codes:
 ```
-python HCSeer2_train_predict.py --run_type predict --sequence_data "\path\predict_data_chrY_seq.txt" --input_feature_data "\path\predict_data_chrY_feature.txt" --checkpoint "\path\Translatomer\lightning_logs\version_178\checkpoints\epoch=31-step=62176.ckpt" --predict_result_path "\path\predict_result\predict_result_chrY.txt" 
+python HCSeer2_train_predict.py --run_type train --sequence_data "\path\Train_input_seq.txt" --input_feature_data "\path\Train_input_feature.txt"  --output_feature_data "\path\Train_output_hot_cold_score.txt" 
+```
+
+```
+python HCSeer2_train_predict.py --run_type predict --sequence_data "\data\predict_data_chrY_seq.txt" --input_feature_data "\data\predict_data_chrY_feature.txt" --checkpoint "\path\Translatomer\lightning_logs\version_178\checkpoints\epoch=31-step=62176.ckpt" --predict_result_path "\path\predict_result\predict_result_chrY.txt" 
 ```
 
