@@ -41,7 +41,7 @@ python HCSeer2_train_predict.py [options]
 ```
 Example to run the codes:
 ```
-python HCSeer2_train_predict.py --run_type train --sequence_data "\path\Train_input_seq.txt" --input_feature_data "\path\Train_input_feature.txt"  --output_feature_data "\path\Train_output_hot_cold_score.txt" 
+python HCSeer2_train_predict.py --run_type train --sequence_data "\path\Train_input_seq_100bp.txt" --input_feature_data "\path\Train_input_feature_100bp.txt"  --output_feature_data "\path\Train_output_hot_cold_score_100bp.txt" 
 ```
 
 ```
