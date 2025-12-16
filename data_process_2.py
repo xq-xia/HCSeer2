@@ -7,14 +7,13 @@ import random
 
 def progress_bar(finish_tasks_number, tasks_number):
     """
-    进度条
-    :param finish_tasks_number: int, 已完成的任务数
-    :param tasks_number: int, 总的任务数
+    :param finish_tasks_number: int
+    :param tasks_number: int
     :return:
     """
 
     percentage = round(finish_tasks_number / tasks_number * 100)
-    print("\r进度: {}%: ".format(percentage), "▓" * (percentage // 2), end="")
+    print("\rprocess: {}%: ".format(percentage), "▓" * (percentage // 2), end="")
     sys.stdout.flush()
 
 
@@ -51,7 +50,6 @@ def seq_process(path):
 
 def seq_split(path,seq_len):
     '''
-    将单个位点数据处理成 100 长度的序列数据 训练数据
     :return:
     '''
     intervals = seq_process(path)
@@ -115,7 +113,7 @@ def seq_split(path,seq_len):
 
 def data_aug(path,seq_len):
     '''
-    数据增强
+    data aug
     :return:
     '''
     ori_seq_split = open(
@@ -256,4 +254,5 @@ if __name__ == '__main__':
     seq_len = args.seq_length
     seq_split(path,seq_len)
     #data_aug(path.replace('.txt','') + '_split.txt')
+
 
