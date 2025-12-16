@@ -28,7 +28,7 @@ conda env create -f HCSeer2.yaml
 ```
 
 ## Model Training
-To train the Translatomer model, use the following command, training data was obtained from Zenodo([https://zenodo.org/uploads/17949354](https://zenodo.org/records/17949354):
+To train the Translatomer model, use the following command, training data was obtained from Zenodo([https://zenodo.org/uploads/17949354](https://zenodo.org/records/17949354)):
 ```
 python HCSeer2_train_predict.py [options]
 
